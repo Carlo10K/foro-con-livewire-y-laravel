@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             ->hasThreads(20)
             ->create();
 
+        \App\Models\Reply::factory(400)->create();
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
