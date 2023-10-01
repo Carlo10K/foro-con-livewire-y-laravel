@@ -20,6 +20,7 @@ class ShowReply extends Component
 
     public function updatedIsEditing() //se puede recibir una variable
     {
+        $this->authorize('update', $this->reply);
         $this->is_creating = false;
         $this->body = $this->reply->body;
     }
@@ -27,6 +28,7 @@ class ShowReply extends Component
     public function updateReply()
     {
         //validar
+        $this->authorize('update', $this->reply);
         $this->validate(['body' => 'required']);
 
         //update
