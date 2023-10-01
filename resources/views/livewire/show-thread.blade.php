@@ -29,6 +29,6 @@
     @endforeach
 
     <form wire:submit.prevent="postReply">
-        <input type="text" placeholder="Escribe una respuesta" class="bg-slate-800 border-0 rounded-md w-full p-3 text-white/60 text-xs" wire:model.defer="body">
+        <input type="text" placeholder="Escribe una respuesta" class="bg-slate-800 border-0 rounded-md w-full p-3 text-white/60 text-xs" wire:model="body">
     </form>
 </div>

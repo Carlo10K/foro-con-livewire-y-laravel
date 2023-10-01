@@ -22,7 +22,8 @@ class ShowThread extends Component
         ]);
 
         //refresh
-        $this->body = '';
+        $this->js('window.location.reload()');
+
     }
 
     public function render()
