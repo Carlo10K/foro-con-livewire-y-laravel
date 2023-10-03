@@ -50,7 +50,7 @@
                             </svg>
                             {{ $thread->replies_count }} Respuesta{{ $thread->replies_count !==1 ? 's' : '' }}
                             |
-                            <a href="" class="hover:text-white">Editar</a>
+                            <a href="{{ route('threads.edit', $thread) }}" class="hover:text-white">Editar</a>
                         </span>
                     </p>
                 </div>
